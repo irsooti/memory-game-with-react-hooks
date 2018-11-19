@@ -1,0 +1,8 @@
+.Cards {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

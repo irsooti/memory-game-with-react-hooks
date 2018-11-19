@@ -1,0 +1,16 @@
+.Btn {
+  padding: 15px 30px;
+  border-radius: 14px;
+  outline: none;
+  border: 5px solid ;
+  background: orange;
+  border-color: #c2c2c2;
+  cursor: pointer;
+  margin: 14px;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.Btn:focus, .Btn:active {
+    border-style: ridge;
+}
