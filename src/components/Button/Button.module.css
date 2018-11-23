@@ -11,6 +11,7 @@
   font-weight: bolder;
 }
 
-.Btn:focus, .Btn:active {
+.Btn:focus, .Btn:active, .Btn.Active {
     border-style: ridge;
+    background: darkorange;
 }

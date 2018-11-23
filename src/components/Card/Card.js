@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Card.module.css';
+import FlipCard from '../FlipCard/FlipCard';
 
 export default function Card(props) {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,8 +24,25 @@ export default function Card(props) {
   if (props.isFound) stylesApplied.push(styles.found);
 
   return (
-    <div
-      className={stylesApplied.join(' ')}
+    <FlipCard
+      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => setIsHovered(true)}
+      isFlipped={isSelected(props) || props.isFound}
+      isFound={props.isFound}
+      onClick={() =>
+        !props.isFound && !isSelected(props)
+          ? props.onSelectedCard({ face: props.cardFace, id: props.id })
+          : null
+      }
+    >
+      {props.isFound || isSelected(props) ? props.cardFace : null}
+    </FlipCard>
+  );
+}
+
+{
+  /* <div
+      
       onMouseLeave={() => setIsHovered(false)}
       onMouseEnter={() => setIsHovered(true)}
       onClick={() =>
@@ -34,6 +52,5 @@ export default function Card(props) {
       }
     >
       {props.isFound || isSelected(props) ? props.cardFace : '?'}
-    </div>
-  );
+    </div> */
 }

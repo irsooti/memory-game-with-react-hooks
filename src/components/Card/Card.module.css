@@ -1,23 +1,9 @@
-.Card {
-  background: lightcoral;
-  border-radius: 15px;
-  display: flex;
-  padding: 100px 15px;
-  margin-top: 30px;
-  font-size: 3em;
-  justify-content: center;
-  width: 200px;
-  cursor: pointer;
-}
+
 
 .hovered {
   background: lightskyblue;
 }
 
-.found {
-  background: lightgreen;
-}
 
-.selected {
-  background: lightslategray;
-}
+
+

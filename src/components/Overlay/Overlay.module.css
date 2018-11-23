@@ -1,0 +1,18 @@
+.Overlay {
+  background: #282c34a8;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  position: fixed;
+  left: 0;
+  display: block;
+}
+
+.Close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #cccccc;
+  cursor: pointer;
+  z-index: 111;
+}
