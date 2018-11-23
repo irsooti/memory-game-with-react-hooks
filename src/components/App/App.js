@@ -20,7 +20,7 @@ export default function App() {
   let level = {
     hard: 30,
     medium: 20,
-    easy: 1
+    easy: 10
   };
 
   let orderedEmojisByDifficult = l => {
