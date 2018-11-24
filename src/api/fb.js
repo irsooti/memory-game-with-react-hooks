@@ -6,6 +6,9 @@ export const getScores = async (mode) => {
     'https://helper-microservices.firebaseio.com/scores.json'
   );
 
+  if (data === null)
+    return [];
+
   Object.keys(data).map((d, i) => container.push(data[d]));
   return container
   .filter(f => f.mode === mode)
